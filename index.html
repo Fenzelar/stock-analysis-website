@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockVerse - แพลตฟอร์มวิเคราะห์หุ้นเรียลไทม์</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">StockVerse</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="dashboard.html">แดชบอร์ด</a></li>
+                <li><a href="portfolio.html">พอร์ตการลงทุน</a></li>
+                <li><a href="watchlist.html">หุ้นที่เฝ้าดู</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn-login">เข้าสู่ระบบ</a>
+                <a href="register.html" class="btn-register">สมัครสมาชิก</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="hero-container">
+            <h1>วิเคราะห์หุ้นแม่นยำ ลงทุนอย่างมั่นใจด้วยข้อมูลเรียลไทม์</h1>
+            <p>ค้นหาข้อมูลหุ้น กราฟเทคนิค และงบการเงินย้อนหลังครบจบในที่เดียว</p>
+            
+            <div class="search-box">
+                <input type="text" id="stockSearch" placeholder="🔍 ค้นหาชื่อหุ้น หรือชื่อบริษัท... (เช่น AAPL, PTT, TSLA)">
+                <button type="button" id="searchBtn">ค้นหา</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARKET OVERVIEW SECTION -->
+    <section id="market-overview">
+        <h2>ภาพรวมตลาดโลก</h2>
+        <div class="market-cards">
+            <div class="market-card up">
+                <h3>NASDAQ</h3>
+                <div class="market-price">16,274.94</div>
+                <div class="market-change">+185.30 (+1.15%)</div>
+                <div class="sparkline-placeholder">[Sparkline Chart: Width 120px, Height 40px]</div>
+                <span class="market-status open">🟢 ตลาดเปิด</span>
+            </div>
+            <div class="market-card up">
+                <h3>S&P 500</h3>
+                <div class="market-price">5,137.08</div>
+                <div class="market-change">+41.51 (+0.81%)</div>
+                <div class="sparkline-placeholder">[Sparkline Chart: Width 120px, Height 40px]</div>
+                <span class="market-status open">🟢 ตลาดเปิด</span>
+            </div>
+            <div class="market-card down">
+                <h3>DOW JONES</h3>
+                <div class="market-price">39,087.38</div>
+                <div class="market-change">-68.20 (-0.17%)</div>
+                <div class="sparkline-placeholder">[Sparkline Chart: Width 120px, Height 40px]</div>
+                <span class="market-status closed">🔴 ตลาดปิด</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRENDING STOCKS SECTION -->
+    <section id="trending">
+        <h2>หุ้นยอดนิยมยอดฮิต</h2>
+        <div class="trending-grid">
+            <div class="stock-card up">
+                <div class="stock-info">
+                    <span class="stock-symbol">TSLA</span>
+                    <span class="stock-name">Tesla, Inc.</span>
+                </div>
+                <div class="stock-values">
+                    <span class="stock-price">$175.34</span>
+                    <span class="stock-change">+$5.20 (+3.06%)</span>
+                </div>
+                <div class="stock-tags">
+                    <span class="tag">ยานยนต์ไฟฟ้า</span>
+                    <span class="tag alert">โวลุ่มสูง</span>
+                </div>
+            </div>
+            <div class="stock-card down">
+                <div class="stock-info">
+                    <span class="stock-symbol">AAPL</span>
+                    <span class="stock-name">Apple Inc.</span>
+                </div>
+                <div class="stock-values">
+                    <span class="stock-price">$180.75</span>
+                    <span class="stock-change">-$1.20 (-0.66%)</span>
+                </div>
+                <div class="stock-tags">
+                    <span class="tag">เทคโนโลยี</span>
+                </div>
+            </div>
+            <div class="stock-card up">
+                <div class="stock-info">
+                    <span class="stock-symbol">NVIDIA</span>
+                    <span class="stock-name">NVIDIA Corp.</span>
+                </div>
+                <div class="stock-values">
+                    <span class="stock-price">$875.12</span>
+                    <span class="stock-change">+$22.40 (+2.63%)</span>
+                </div>
+                <div class="stock-tags">
+                    <span class="tag">AI / Chipset</span>
+                </div>
+            </div>
+            <div class="stock-card">
+                <div class="stock-info">
+                    <span class="stock-symbol">PTT</span>
+                    <span class="stock-name">บริษัท ปตท. จำกัด (มหาชน)</span>
+                </div>
+                <div class="stock-values">
+                    <span class="stock-price">34.25 THB</span>
+                    <span class="stock-change">0.00 (0.00%)</span>
+                </div>
+                <div class="stock-tags">
+                    <span class="tag">พลังงาน</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LATEST NEWS SECTION -->
+    <section id="news">
+        <h2>ข่าวสารล่าสุด</h2>
+        <div class="news-grid">
+            <article class="news-card">
+                <div class="news-img-placeholder">[Image: Central Bank & Interest rates, 350x200px]</div>
+                <div class="news-content">
+                    <span class="news-meta">StockNews • 2 ชั่วโมงที่แล้ว</span>
+                    <h3>ธนาคารกลางส่งสัญญาณคงอัตราดอกเบี้ย นักลงทุนจับตาเงินเฟ้อเดือนนี้</h3>
+                </div>
+            </article>
+            <article class="news-card">
+                <div class="news-img-placeholder">[Image: AI Technology & Microchip, 350x200px]</div>
+                <div class="news-content">
+                    <span class="news-meta">TechFinance • 4 ชั่วโมงที่แล้ว</span>
+                    <h3>หุ้นกลุ่มเทคโนโลยีพุ่งทะยาน ขานรับกระแส AI และยอดสั่งซื้อชิปทั่วโลก</h3>
+                </div>
+            </article>
+            <article class="news-card">
+                <div class="news-img-placeholder">[Image: Oil rig sunset background, 350x200px]</div>
+                <div class="news-content">
+                    <span class="news-meta">GlobalEnergy • 6 ชั่วโมงที่แล้ว</span>
+                    <h3>วิเคราะห์ราคาน้ำมันดิบโลก มีสิทธิ์ปรับตัวสูงขึ้นหลังกลุ่มโอเปกควบคุมกำลังการผลิต</h3>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col about">
+                <h4>StockVerse</h4>
+                <p>แพลตฟอร์มวิเคราะห์หุ้นระดับมืออาชีพ ให้คุณเข้าถึงข้อมูลการลงทุนทั่วโลกได้ง่ายและรวดเร็ว</p>
+            </div>
+            <div class="footer-col links">
+                <h4>ลิงก์ด่วน</h4>
+                <ul>
+                    <li><a href="#">เกี่ยวกับเรา</a></li>
+                    <li><a href="#">ข้อตกลงการใช้งาน</a></li>
+                    <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact">
+                <h4>ติดต่อเรา</h4>
+                <p>อีเมล: support@stockverse.com</p>
+                <p>Social: FB | X | LinkedIn</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 StockVerse. All rights reserved. ข้อมูลนี้มีวัตถุประสงค์เพื่อการศึกษาและการวิเคราะห์เท่านั้น ไม่ใช่คำแนะนำในการลงทุน</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

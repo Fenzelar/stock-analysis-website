@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลหุ้นรายตัว - StockVerse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stock.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:#1e40af;">StockVerse</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="dashboard.html">แดชบอร์ด</a></li>
+                <li><a href="portfolio.html">พอร์ตการลงทุน</a></li>
+                <li><a href="watchlist.html">หุ้นที่เฝ้าดู</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="stock-container max-width-container">
+        <div class="stock-header-block">
+            <div>
+                <h1 id="stockSymbolDisplay">TSLA</h1>
+                <p id="stockNameDisplay">Tesla, Inc. (ยานยนต์ไฟฟ้า)</p>
+            </div>
+            <div class="stock-live-price">
+                <div class="big-price">$175.34</div>
+                <div class="price-change up">+$5.20 (+3.06%)</div>
+            </div>
+        </div>
+
+        <div class="stock-grid">
+            <div class="chart-area">
+                <div class="timeframe-selectors">
+                    <button class="active">1D</button><button>1W</button><button>1M</button><button>1Y</button>
+                </div>
+                <div class="candlestick-placeholder">
+                    <p style="color: #94a3b8; padding-top: 150px;">[กราฟแท่งเทียน Candlestick จำลองระดับราคาปัจจุบัน]</p>
+                </div>
+            </div>
+
+            <div class="financial-ratios">
+                <h3>งบการเงินและอัตราส่วนสำคัญ</h3>
+                <table class="ratio-table">
+                    <tr><td>P/E Ratio</td><td>24.5</td></tr>
+                    <tr><td>P/BV Ratio</td><td>4.2</td></tr>
+                    <tr><td>Dividend Yield</td><td>1.2%</td></tr>
+                    <tr><td>ROE</td><td>15.4%</td></tr>
+                    <tr><td>Market Cap</td><td>$550B</td></tr>
+                </table>
+                <button class="btn-add-watchlist" id="addWatchlistBtn">+ เพิ่มในรายการเฝ้าดู</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/stock.js"></script>
+</body>
+</html>

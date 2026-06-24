@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายการเฝ้าดู - StockVerse</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:#1e40af;">StockVerse</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="dashboard.html">แดชบอร์ด</a></li>
+                <li><a href="portfolio.html">พอร์ตการลงทุน</a></li>
+                <li><a href="watchlist.html" class="active">หุ้นที่เฝ้าดู</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="max-width-container" style="padding:40px 20px;">
+        <h2>รายการหุ้นที่คุณกดเฝ้าดู (Watchlist)</h2>
+        <p style="color: #64748b; margin-bottom: 20px;">ติดตามราคาหุ้นที่คุณสนใจอย่างใกล้ชิด</p>
+
+        <div id="watchlistContainer" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px;">
+            <div class="market-card up" style="background:white; padding:20px; border-radius:8px; border:1px solid #e2e8f0;">
+                <div style="display:flex; justify-content:space-between;">
+                    <h3>NVIDIA</h3>
+                    <button style="border:none; background:none; color:#ef4444; cursor:pointer;">❌ ลบ</button>
+                </div>
+                <div style="font-size:24px; font-weight:bold; margin:10px 0;">$875.12</div>
+                <div class="up">+$22.40 (+2.63%)</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

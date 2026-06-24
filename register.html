@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก - StockVerse</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>สร้างบัญชีใหม่</h2>
+            <p class="auth-subtitle">เริ่มวิเคราะห์หุ้นและจัดพอร์ตการลงทุนของคุณวันนี้</p>
+            <form id="registerForm" action="login.html">
+                <div class="form-group">
+                    <label for="fullname">ชื่อ-นามสกุล</label>
+                    <input type="text" id="fullname" placeholder="สมชาย มั่นคง" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">อีเมล</label>
+                    <input type="email" id="reg-email" placeholder="example@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">รหัสผ่าน</label>
+                    <input type="password" id="reg-password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-auth">สมัครสมาชิก</button>
+            </form>
+            <p class="auth-footer">มีบัญชีอยู่แล้ว? <a href="login.html">เข้าสู่ระบบ</a></p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แดชบอร์ดภาพรวม - StockVerse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:#1e40af;">StockVerse</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="dashboard.html" class="active">แดชบอร์ด</a></li>
+                <li><a href="portfolio.html">พอร์ตการลงทุน</a></li>
+                <li><a href="watchlist.html">หุ้นที่เฝ้าดู</a></li>
+            </ul>
+            <div class="user-profile-menu">
+                <a href="profile.html" class="user-nav-link">
+                    <span class="avatar-mock">👤</span> สุริยะ โต๊ะทอง
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="dashboard-layout max-width-container">
+        <main class="main-content">
+            <section class="welcome-banner">
+                <h1>สวัสดีครับ คุณสุริยะ ✨</h1>
+                <p>นี่คือภาพรวมตลาดและพอร์ตการลงทุนของคุณในวันนี้</p>
+            </section>
+
+            <section class="widgets-grid">
+                <div class="widget-card">
+                    <h3>มูลค่าพอร์ตสุทธิ</h3>
+                    <div class="widget-val">฿1,245,800.00</div>
+                    <div class="widget-sub up">+฿12,400.00 (+1.01%) วันนี้</div>
+                </div>
+                <div class="widget-card">
+                    <h3>ความร้อนแรงของตลาด (Sentiment)</h3>
+                    <div class="widget-val">ค่อนข้างดี (Bullish)</div>
+                    <div class="sentiment-bar"><div class="bar-fill" style="width: 72%;"></div></div>
+                </div>
+            </section>
+
+            <section class="chart-section">
+                <h2>กราฟเปรียบเทียบผลตอบแทนสินทรัพย์</h2>
+                <div class="main-chart-placeholder">
+                    <p style="color: #64748b; padding-top: 150px;">[พื้นที่แสดงกราฟเทคนิคัล / ผลตอบแทนย้อนหลังยืดหยุ่นตามขนาดจอ]</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
